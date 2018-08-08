@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Welcome To Open ONI"
+date:   2018-08-07 13:00
+categories: general
+author: Karin Dalziel
+---
+
+Welcome to the Open Oni Blog! We will post news and updates here

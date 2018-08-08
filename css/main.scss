@@ -1,0 +1,108 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+@charset "utf-8";
+
+
+// Our variables
+$base-font-family: "Times New Roman", "Times", "Georgia", serif;
+$base-font-size:   20px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #494948;
+$background-color: #fefdf9;
+$brand-color:      #c81b00;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    1100px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting"
+;
+
+/* Styles for posts */
+
+.center_table {
+  border: 1px solid #333;
+  margin: auto;
+}
+
+.heading_table th {
+  color: #fff;
+}
+
+/* Styles for home */
+
+$stripe-odd: #fff;
+$stripe-even: #eae8de;
+
+.stripe-one, .stripe-two, .stripe-three, .stripe-four, .stripe-five, .stripe-six {
+  font-size: 1.2em;
+  padding: 1.5em 0;
+}
+
+.stripe-one {
+  background-color: $stripe-odd;
+  border-top: 1px solid #aaa;
+  img {
+    border: 3px solid #000; 
+    float: right; 
+    margin-left: 1em;
+    width: 50%; 
+  }
+}
+
+.stripe-two {
+  background-color: $stripe-even;
+  text-align: center;
+
+}
+
+.stripe-three {
+  background-color: $stripe-odd;
+  text-align: center;
+}
+
+.stripe-four {
+  background-color: $stripe-even;
+}
+
+.stripe-five {
+  background-color: $stripe-odd;
+}
+
+.stripe-six {
+  background-color: $stripe-even;
+}
+
