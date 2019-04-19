@@ -67,7 +67,17 @@ $on-laptop:        800px;
 $stripe-odd: #fff;
 $stripe-even: #eae8de;
 
-.stripe-one, .stripe-two, .stripe-three, .stripe-four, .stripe-five, .stripe-six {
+.screenshots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.screenshots img {
+  border: 0.125em solid #000;
+}
+
+.stripe-one, .stripe-two, .stripe-three, .stripe-four, .stripe-five {
   font-size: 1.2em;
   padding: 1.5em 0;
 }
@@ -100,9 +110,5 @@ $stripe-even: #eae8de;
 
 .stripe-five {
   background-color: $stripe-odd;
-}
-
-.stripe-six {
-  background-color: $stripe-even;
 }
 
