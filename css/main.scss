@@ -67,42 +67,36 @@ $on-laptop:        800px;
 $stripe-odd: #fff;
 $stripe-even: #eae8de;
 
-.stripe-one, .stripe-two, .stripe-three, .stripe-four, .stripe-five, .stripe-six {
+.centered {
+  text-align: center;
+}
+
+.pull-right {
+  border: 3px solid #000;
+  float: right;
+  margin-left: 1em;
+  width: 50%;
+}
+
+.screenshots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.screenshots img {
+  border: 0.125em solid #000;
+}
+
+.striped > :nth-child(1n) {
   font-size: 1.2em;
   padding: 1.5em 0;
 }
 
-.stripe-one {
-  background-color: $stripe-odd;
-  border-top: 1px solid #aaa;
-  img {
-    border: 3px solid #000; 
-    float: right; 
-    margin-left: 1em;
-    width: 50%; 
-  }
-}
-
-.stripe-two {
-  background-color: $stripe-even;
-  text-align: center;
-
-}
-
-.stripe-three {
-  background-color: $stripe-odd;
-  text-align: center;
-}
-
-.stripe-four {
+.striped > :nth-child(even) {
   background-color: $stripe-even;
 }
 
-.stripe-five {
+.striped > :nth-child(odd) {
   background-color: $stripe-odd;
 }
-
-.stripe-six {
-  background-color: $stripe-even;
-}
-
