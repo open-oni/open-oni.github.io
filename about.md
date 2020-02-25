@@ -9,8 +9,8 @@ permalink: /about/
 <p>There are a number of sites using Open ONI in production. Links to these
 websites and their source code are available on
 <a href="https://github.com/open-oni/open-oni/wiki/Sites-Using-Open-ONI" rel="nofollow">
-the Open ONI wiki</a>. If you are using Open ONI to power your site, please let
-us know and we will add you to the list!</p>
+Sites Using Open ONI</a> on our wiki. If you are using Open ONI to power your
+site, please let us know and we will add you to the list!</p>
 
 <p>The Open ONI community is a small group of developers from NDNP awardee
 institutions. We support Open ONI to power state-specific sites showcasing
