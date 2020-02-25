@@ -15,8 +15,13 @@
 
       <div class="trigger">
         {% for page in site.pages %}
-          {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+
+          {% comment %}
+            Temporarily removing "Updates" from site until populated
+          {% endcomment %}
+
+          {% if page.title and page.title != "Updates" %}
+            <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
           {% endif %}
         {% endfor %}
       </div>

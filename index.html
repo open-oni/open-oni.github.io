@@ -18,9 +18,8 @@ layout: default
         and improvements.
       </p>
       <p>
-        Read <a href="https://github.com/open-oni/open-oni/wiki/About-Open-ONI"
-        rel="nofollow">"About Open ONI" in our wiki</a> for more information
-        about the project's origins.
+        See <a href="{{ 'about' | prepend: site.baseurl }}">About</a> for more
+        information about the project's origins.
       </p>
     </div>
   </div><!-- /stripe -->
@@ -75,26 +74,46 @@ layout: default
       <h2>Install</h2>
       <p>
         To evaluate the software, we recommend installing from the
-        <a href="https://github.com/open-oni/open-oni/releases/latest"
+        <a href="https://github.com/open-oni/open-oni/releases"
         rel="nofollow">latest Open ONI release</a>,
         <br>
         rather than checking out the latest changes on the <code>master</code>
         branch.
       </p>
       <p>
+        The 1.0 release includes upgrading Django to the latest LTS 2.2 release
+        along with migrating to Python 3 and upgrading Solr and MariaDB to more
+        recent releases. Note that release 0.11 and prior run Python 2 and
+        Django 1.11 LTS which goes out of support in April 2020.
+      </p>
+      <p>
         If you're interested in more recent changes, check out the
         <code>dev</code> branch but be warned that we don't expect it will
         always be in a working state at this point.
       </p>
+      <p>
+        For more information, see our
+        <a href="https://github.com/open-oni/open-oni/#resource-requirements" rel="nofollow">Resource Requirements</a>
+        and
+        <a href="https://github.com/open-oni/open-oni/#dependency-roadmap" rel="nofollow">Dependency Roadmap</a>.
+      </p>
 
       <h3>Documentation</h3>
       <p>
-        Documentation is available in the <a
-        href="https://github.com/open-oni/open-oni/wiki" rel="nofollow">Open ONI
-        wiki</a>.<br>
-        <a href="https://github.com/open-oni/open-oni/tree/dev/docs"
-        rel="nofollow">Production install instructions</a> are in progress on
-        the <code>dev</code> branch.
+        Documentation is available for all releases following 0.11. Docs can
+        be found with the source code in the <code>/docs</code> directory.
+        <ul>
+          <ol>
+            <a href="https://github.com/open-oni/open-oni/tree/master/docs" rel="nofollow">
+              Current production documentation
+            </a>
+          </ol>
+          <ol>
+            <a href="https://github.com/open-oni/open-oni/tree/dev/docs" rel="nofollow">
+              Latest development documentation
+            </a>
+          </ol>
+        </ul>
       </p>
     </div>
   </div><!-- /stripe -->
@@ -103,11 +122,7 @@ layout: default
     <div class="wrapper">
       <h2>Support</h2>
       <p>
-        Open ONI is currently not ready for general production use outside the
-        institutions who have been able to provide time for developer
-        participation and have deployed it individually. Documentation and
-        changes to facilitate more standardized deployment are under active
-        development, but maintainers can only provide a minimal amount of
+        Maintainers can only provide a minimal amount of
         assistance while working on Open ONI part-time. Developers cannot be
         expected to provide extensive one-on-one support.
       </p>
@@ -155,9 +170,13 @@ layout: default
 
       <h3>Contribute</h3>
       <p>
-        If you are interested in collaborating on the project, please read
-        <a href="https://github.com/open-oni/open-oni/wiki/Contribute"
-        rel="nofollow">"Contribute" in our wiki</a> for more details.
+        If you are interested in collaborating on the project, please review
+        <a href="https://github.com/open-oni/open-oni/tree/dev/CONTRIBUTING.md"
+        rel="nofollow">CONTRIBUTING.md</a>
+        for more details. Everyone interacting within the Open ONI community is
+        expected to follow the
+        <a href="https://github.com/open-oni/open-oni/tree/dev/CODE_OF_CONDUCT.md"
+        rel="nofollow">Open ONI Community Code of Conduct</a>
       </p>
     </div>
   </div><!-- /stripe -->
