@@ -17,3 +17,5 @@ gems:
 markdown: kramdown
 paginate: 5               # number of posts per page
 paginate_path: "/:num/"
+plugins: [jekyll-paginate]
+
